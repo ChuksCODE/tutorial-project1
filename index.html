@@ -5,9 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chinese Login page</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdhn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link rel="stylesheet" href="project.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    
 </head>
 <body>
 
@@ -16,7 +16,6 @@
             <div class="logo">
                 <img src="original logo.jpeg" alt="company logo">
             </div>
-
             <nav>
                 <ul>
                     <li>New users open</li>
@@ -26,47 +25,63 @@
                 </ul>
             </nav>   
     </div>
-
-    <div class="container">
-
         <div class="row 1">
-                <div class="col-lg-8">
-                    <img src="999.png" alt="machine engine" width="600">
+                <div class="col-lg-7" style="position: relative; margin-top: 100px;">
+                    <img src="999.png" alt="machine engine" width="700" height="600">
                 </div>
         
-                <div class="col-lg-4">
-                    <div class="box">
-                        <div class="wrapper">
-                            <div class="top-header">
-                                <span>have an account?</span>
-                                <header>Login</header>
+                <div class="col-lg-5" style="position: relative; margin-top: 100px;">
+                    <div class="wrapper">
+                        <div class="form_header">
+                            <div class="form-tabs">
+                                <button id="userbutton" class="button" onclick="toggleButton('userbutton')" >email account log in</button>
+
+                                <button id="adminbutton" class="button active" onclick="toggleButton('adminbutton')" >Admin login</button>
+                            </div>        
+                        </div>
+                            <div class="form_body">
+                                <form action="#" id="loginform" style="margin-top: 50px;">
+                                            <div id="emaillogin">
+                                                <i class="fa fa-user" aria-hidden="true"></i>
+                                                <input type="email" class="input" placeholder="email address" required>    
+                                            </div>
+
+                                            <br>
+                                            <div class="input-field">
+                                                <i class="bi bi-file-lock2-fill"></i>
+                                                <input type="password" class="input" placeholder="Password" required>
+                                            </div>            
+                                </form>
                             </div>
-                
-                            <div class="input-field">
-                                <i class="bi bi-envelope-at-fill"></i>
-                                <input type="email" class="input" placeholder="Email" required>
-                            </div>
-                            <div class="input-field">
-                                <i class="bi bi-file-lock2-fill"></i>
-                                <input type="password" class="input" placeholder="Password" required>
-                            </div>
-                            <div class="input-field">
-                                <input type="submit" class="submit" value="login">
-                            </div>
-                            
+                            <br>
+
                             <div class="bottom">
                                 <div class="left">
                                     <input type="checkbox" id="check">
-                                    <label for="check">remenber account</label>
+                                    <label for="check">remember account</label>
                                 </div>
                                 <div class="right">
-                                    <label><a href="#">forgot password?</a></label>
+                                    <label><a href="#">forget the password?</a></label>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-        </div>
-    </div>                   
+                                    <br>
+                            <div id="login">
+                                <button id="login" class="submit">
+                                    <input type="submit" class="submit" value="login">
+                                </button>
+                            </div>
+                                    <br>
 
+                                <div class="terms">
+                                    <input type="checkbox" class="check">
+                                    <label for="check">I have read and agree to <span style="color: blue;">the terms of Service</span> and <br> <span style="color: blue;">Privacy Policy</span></label>
+                                </div> 
+                                
+
+
+                            </div>
+                    </div>
+        </div>                   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 </body>
 </html>

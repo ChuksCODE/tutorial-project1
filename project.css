@@ -1,13 +1,13 @@
 *{
     padding: 0px;
     margin: 0px;
-    text-decoration: none;
     box-sizing: border-box;
 }
 
 body{
     background-image: url("bg999.jpeg");
     background-position:100%;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 .navbar{
@@ -32,14 +32,37 @@ nav li{
     font-weight: bold;
 }
 
-.row{
-    padding-top: 90px;
+.wrapper{
+    background-color: white;
+    height: 500px;
+    width: 450px;
 }
 
-.box{
+.button{
+    background-color:white;
+    color: black;
+    border: none;
+    font-weight: bold;
+    padding: 10px 40px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    border-radius: 0px;
+    cursor: zoom-out;
+}
+.active{
+    background-color: darkgrey;
+}
+.bottom{
     display: flex;
-    justify-content: center;
-    height: 500;
-    width: 400;
-    
+    justify-content: space-between;
+    padding: 50px
+}
+
+.login{
+    background-color: blue;
+    color: white;
+    border-radius: 5px;
 }
