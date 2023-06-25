@@ -1,87 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chinese Login page</title>
     <link rel="stylesheet" href="project.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
 </head>
+
 <body>
 
     <div class="navbar">
-        
-            <div class="logo">
-                <img src="original logo.jpeg" alt="company logo">
-            </div>
-            <nav>
-                <ul>
-                    <li>New users open</li>
-                    <li>English</a></li>
-                    <li>Netease mailbox official client</a></li>
-                    <li>help center</a></li>
-                </ul>
-            </nav>   
+
+        <div class="logo">
+            <img src="original logo.jpeg" alt="company logo">
+        </div>
+        <nav>
+            <ul>
+                <li>New users open</li>
+                <li>English</a></li>
+                <li>Netease mailbox official client</a></li>
+                <li>help center</a></li>
+            </ul>
+        </nav>
     </div>
-        <div class="row 1">
-                <div class="col-lg-7" style="position: relative; margin-top: 100px;">
-                    <img src="999.png" alt="machine engine" width="700" height="600">
+    <div class="row">
+        <div class="col-lg-1">
+        </div>
+        <div class="col-lg-6" style="position: relative; margin-top: 100px;">
+            <img src="999.png" alt="machine engine" width="90%">
+        </div>
+
+        <div class="col-lg-4" style="position: relative; margin-top: 100px;">
+            <nav class="">
+                <div class="nav nav-tabs nav-justified" id="nav-tab" role="tablist">
+                  <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#user" type="button" role="tab"  aria-selected="true">User Login</button>
+                  <button class="nav-link"  data-bs-toggle="tab" data-bs-target="#admin" type="button" role="tab"  aria-selected="false">Admin Login</button>
                 </div>
-        
-                <div class="col-lg-5" style="position: relative; margin-top: 100px;">
-                    <div class="wrapper">
-                        <div class="form_header">
-                            <div class="form-tabs">
-                                <button id="userbutton" class="button" onclick="toggleButton('userbutton')" >email account log in</button>
+            </nav>
 
-                                <button id="adminbutton" class="button active" onclick="toggleButton('adminbutton')" >Admin login</button>
-                            </div>        
+              <div class="tab-content" id="nav-tabContent">
+                <div class="tab-pane fade show active" id="user" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0" style="background-color: white; padding: 30px;">
+
+                    <form action="#">
+                        <div id="emaillogin">
+                            <i class="fa fa-user" aria-hidden="true"></i>
+                            <input type="email" class="form-control" placeholder="email address" required>
                         </div>
-                            <div class="form_body">
-                                <form action="#" id="loginform" style="margin-top: 50px;">
-                                            <div id="emaillogin">
-                                                <i class="fa fa-user" aria-hidden="true"></i>
-                                                <input type="email" class="input" placeholder="email address" required>    
-                                            </div>
 
-                                            <br>
-                                            <div class="input-field">
-                                                <i class="bi bi-file-lock2-fill"></i>
-                                                <input type="password" class="input" placeholder="Password" required>
-                                            </div>            
-                                </form>
-                            </div>
-                            <br>
+                        <br>
+                        <div class="input-field">
+                            <i class="bi bi-file-lock2-fill"></i>
+                            <input type="password" class="form-control" placeholder="Password" required>
+                        </div>
+                    </form>
 
-                            <div class="bottom">
-                                <div class="left">
-                                    <input type="checkbox" id="check">
-                                    <label for="check">remember account</label>
-                                </div>
-                                <div class="right">
-                                    <label><a href="#">forget the password?</a></label>
-                                </div>
-                            </div>
-                                    <br>
-                            <div id="login">
-                                <button id="login" class="submit">
-                                    <input type="submit" class="submit" value="login">
-                                </button>
-                            </div>
-                                    <br>
+                </div>
+                <div class="tab-pane fade" id="admin" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
 
-                                <div class="terms">
-                                    <input type="checkbox" class="check">
-                                    <label for="check">I have read and agree to <span style="color: blue;">the terms of Service</span> and <br> <span style="color: blue;">Privacy Policy</span></label>
-                                </div> 
-                                
+                    <h1> this is the second one</h1>
+                    <p>Inside PRofile</p>
+                </div>
+              </div>
 
 
-                            </div>
+
+            <!-- <div class="wrapper">
+                <div class="form_header">
+                    <div class="form-tabs">
+                        <button id="userbutton" class="button" onclick="toggleButton('userbutton')">email account log
+                            in</button>
+
+                        <button id="adminbutton" class="button active" onclick="toggleButton('adminbutton')">Admin
+                            login</button>
                     </div>
-        </div>                   
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+                </div>
+                <div class="form_body">
+                    <form action="#" id="loginform" style="margin-top: 50px;">
+                        <div id="emaillogin">
+                            <i class="fa fa-user" aria-hidden="true"></i>
+                            <input type="email" class="input" placeholder="email address" required>
+                        </div>
+
+                        <br>
+                        <div class="input-field">
+                            <i class="bi bi-file-lock2-fill"></i>
+                            <input type="password" class="input" placeholder="Password" required>
+                        </div>
+                    </form>
+                </div>
+                <br>
+
+                <div class="bottom">
+                    <div class="left">
+                        <input type="checkbox" id="check">
+                        <label for="check">remember account</label>
+                    </div>
+                    <div class="right">
+                        <label><a href="#">forget the password?</a></label>
+                    </div>
+                </div>
+                <br>
+                <div id="login">
+                    <button id="login" class="submit">
+                        <input type="submit" class="submit" value="login">
+                    </button>
+                </div>
+                <br>
+
+                <div class="terms">
+                    <input type="checkbox" class="check">
+                    <label for="check">I have read and agree to <span style="color: blue;">the terms of Service</span>
+                        and <br> <span style="color: blue;">Privacy Policy</span></label>
+                </div>
+
+
+
+            </div> -->
+        </div>
+        <div class="col-lg-1">
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
